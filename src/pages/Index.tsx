@@ -78,7 +78,7 @@ const Index = () => {
       <section className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <BookOpen className="mx-auto mb-6 h-16 w-16" />
-          <h1 className="text-5xl font-bold mb-4">Biblioteca Digital</h1>
+          <h1 className="text-5xl font-bold mb-4">Biblioteca Babilônia</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Descubra milhares de livros, desde clássicos atemporais até os últimos best sellers
           </p>
@@ -147,7 +147,7 @@ const Index = () => {
             <BookOpen className="mx-auto mb-6 h-12 w-12" />
             <h2 className="text-3xl font-bold mb-4">Você é um Autor?</h2>
             <p className="text-lg mb-8">
-              Gostaria de adicionar seu livro à nossa biblioteca digital? Entre em contato conosco!
+              Gostaria de adicionar seu livro à Biblioteca Babilônia? Entre em contato conosco!
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
@@ -157,11 +157,11 @@ const Index = () => {
                   <CardTitle className="text-white">E-mail</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-white/90">autores@bibliotecadigital.com</p>
+                  <p className="text-white/90">autores@bibliotecababilonia.com</p>
                   <Button 
                     variant="secondary" 
                     className="mt-4 w-full"
-                    onClick={() => window.location.href = 'mailto:autores@bibliotecadigital.com'}
+                    onClick={() => window.location.href = 'mailto:autores@bibliotecababilonia.com'}
                   >
                     Enviar E-mail
                   </Button>

@@ -31,7 +31,7 @@ export const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <BookOpen className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold">BiblioTeca</span>
+            <span className="text-xl font-bold">Babilônia</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -84,7 +84,7 @@ export const Navigation = () => {
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-2">
                     <BookOpen className="h-6 w-6 text-primary" />
-                    <span className="text-lg font-bold">BiblioTeca</span>
+                    <span className="text-lg font-bold">Babilônia</span>
                   </div>
                 </div>
 
