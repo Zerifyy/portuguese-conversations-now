@@ -1,5 +1,4 @@
-
-import { BookOpen, Star, Heart, Search } from "lucide-react";
+import { BookOpen, Star, Heart, Search, Mail, Phone } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -137,6 +136,66 @@ const Index = () => {
                 <CardDescription>Leitores Ativos</CardDescription>
               </CardHeader>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section for Authors */}
+      <section className="py-16 bg-gradient-to-r from-purple-900 to-blue-900 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto">
+            <BookOpen className="mx-auto mb-6 h-12 w-12" />
+            <h2 className="text-3xl font-bold mb-4">Você é um Autor?</h2>
+            <p className="text-lg mb-8">
+              Gostaria de adicionar seu livro à nossa biblioteca digital? Entre em contato conosco!
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
+                <CardHeader className="text-center">
+                  <Mail className="mx-auto mb-2 h-8 w-8" />
+                  <CardTitle className="text-white">E-mail</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-white/90">autores@bibliotecadigital.com</p>
+                  <Button 
+                    variant="secondary" 
+                    className="mt-4 w-full"
+                    onClick={() => window.location.href = 'mailto:autores@bibliotecadigital.com'}
+                  >
+                    Enviar E-mail
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
+                <CardHeader className="text-center">
+                  <Phone className="mx-auto mb-2 h-8 w-8" />
+                  <CardTitle className="text-white">Telefone</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-white/90">(11) 9999-8888</p>
+                  <Button 
+                    variant="secondary" 
+                    className="mt-4 w-full"
+                    onClick={() => window.location.href = 'tel:+5511999998888'}
+                  >
+                    Ligar Agora
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-8 p-6 bg-white/5 rounded-lg backdrop-blur-sm">
+              <h3 className="text-xl font-semibold mb-4">Requisitos para Submissão</h3>
+              <ul className="text-left space-y-2 max-w-2xl mx-auto">
+                <li>• Obra original e inédita ou com direitos autorais em dia</li>
+                <li>• Sinopse detalhada do livro</li>
+                <li>• Biografia do autor</li>
+                <li>• Arquivo do livro em formato PDF ou EPUB</li>
+                <li>• Capa em alta resolução</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
